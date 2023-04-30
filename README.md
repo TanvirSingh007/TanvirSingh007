@@ -1,6 +1,6 @@
 # < Anmol Sekhon />
 
-[![Anmol's GitHub stats](https://github-readme-stats.vercel.app/api?username=anmolsekhon590)](https://github.com/anuraghazra/github-readme-stats)
+[![Anmol's GitHub stats](https://github-readme-stats.vercel.app/api?username=TanvirSingh007)](https://github.com/anuraghazra/github-readme-stats)
 
 👋 Hi! I'm a Software Developer. I do full stack web programming 💻. I love creating projects in React JS  and Java (Spring Boot). I also enjoy tinkering with operating systems.   
 
