@@ -1,19 +1,29 @@
-# < Anmol Sekhon />
+# < Tanvir Singh />
 
-[![Anmol's GitHub stats](https://github-readme-stats.vercel.app/api?username=TanvirSingh007)](https://github.com/anuraghazra/github-readme-stats)
+[![Tanvir's GitHub stats](https://github-readme-stats.vercel.app/api?username=TanvirSingh007)](https://github.com/anuraghazra/github-readme-stats)
 
-👋 Hi! I'm a Software Developer. I do full stack web programming 💻. I love creating projects in React JS  and Java (Spring Boot). I also enjoy tinkering with operating systems.   
+👋 Hi! I'm a Software Developer. I do full stack web development 💻. I love creating projects in any language/frameword. I also enjoy tinkering with operating systems and servers.   
 
 ## Technologies
+```/* Languages */```
+- Java
+- Javascript
+- Typescript
+- Python
+- Go
+- C / C++ / C#
+
 ```/* Front End */```
-- React JS
-- AngularJS
+- ReactJS
+- NextJS
+- Angular
 - HTML, CSS and JS
 
 ```/* Backend */ ```
 - Java and Spring Boot Framework
-- .NET Framework, Entity Framework and ADO .NET
-- PHP (LAMP stack)
+- NodeJS / ExpressJS
+- Django
+- Flask
 
 ```/* Databases */```
 - MySQL
@@ -21,21 +31,19 @@
 - MongoDB
 - MySQL Workbench (Client)
 
-```/* Native */```
-- JavaFX
-- WPF and C#
-
 ```/* Editors and IDEs */```
 - Visual Studio Code
-- Visual Studio 2022
-- IntelliJ
+- IntelliJ Idea
+- Pycharm
 - Vim
-- nano
+- Nano
 
-```/* Other Technologies */ ```
+```/* Devops */ ```
 - Docker
-- WSL 2
-- Git and GitHub
+- Kubernetes
+- Jenkins
+- WSL
+- Git
 
 ```/* Operating Systems */```
 - Debian, Ubuntu, Arch, Fedora (Linux based)
