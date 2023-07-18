@@ -2,7 +2,7 @@
 
 [![Tanvir's GitHub stats](https://github-readme-stats.vercel.app/api?username=TanvirSingh007)](https://github.com/anuraghazra/github-readme-stats)
 
-👋 Hi! I'm a Software Developer. I do full stack web development 💻. I love creating projects in any language/frameword. I also enjoy tinkering with operating systems and servers.   
+👋 Hi! I'm a Software Developer. I do full stack web development 💻. I love creating projects in any language/framework. I also enjoy tinkering with operating systems and servers.   
 
 ## Technologies
 ```/* Languages */```
