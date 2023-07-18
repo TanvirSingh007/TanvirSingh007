@@ -29,6 +29,7 @@
 - MySQL
 - PostgreSQL
 - MongoDB
+- Firebase
 - MySQL Workbench (Client)
 
 ```/* Editors and IDEs */```
