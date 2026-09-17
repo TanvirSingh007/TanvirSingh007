@@ -1,76 +1,45 @@
 ```console
 $ whoami
 Tanvir Singh — software engineer, Ludhiana
-
-$ cat interests.txt
-ai agents · infrastructure · self-hosting
-
-$ curl tanvir.sh
 ```
 
-## AI agents
+I spend most of my time in code I didn't write, on enterprise products older than my
+time at the company. The reports come in vague, the people who wrote the thing left
+years ago, and the fix itself is rarely the hard part. Working out where the fix
+belongs is. I didn't expect to enjoy that as much as I do.
 
-Almost none of the interesting work is the model itself.
+A lot of it has turned into getting agents to do it alongside me, though not the part
+everyone means by that. The models are fine. What they can't do is build a two-decade-old
+desktop app that only compiles on Windows, or debug an iOS client that needs a physical
+iPad plugged in somewhere. So I spend my time on the plumbing: VMs an agent can drive,
+hardware it can reach, the context it should read before it touches anything.
 
-Most agents are useless on the systems I care about, because those systems cannot be
-reached from a container with a text editor. A two-decade-old desktop app builds on
-Windows. An iOS client needs real hardware to install and debug on. So I build the
-harnesses: provisioning and driving Windows VMs, instrumenting physical devices,
-handing an agent the same access a person would have.
+The bit I actually care about is whether I can trust what comes back. An agent will
+write a regression test that passes against the broken code and tell you it's done,
+which is worse than useless. So nothing counts until I've watched the test fail first.
+That rule has caught me more often than I'd like to admit.
 
-The other half is trust. An agent will happily write a regression test that passes
-against the broken code, which proves nothing at all. So every test has to be observed
-failing before the fix goes back in. Without that check the throughput is worthless,
-because you cannot tell a fixed bug from a closed one.
+Probably the same instinct is why there's a homelab, and why it got out of hand. It
+runs on Unraid, every service is a compose stack in git, and it does considerably more
+than it needs to: GitLab, Appwrite, Nextcloud, Home Assistant, Jellyfin, Bitwarden,
+all sitting behind nginx on an internal domain with cloudflared handling the few things
+that need to be reachable from outside.
 
-Somewhere between those two is the boring, underrated part: the context an agent reads
-before it touches a codebase. Most of the quality comes from there.
+The two I like most are Frigate, doing camera detection on the Intel iGPU, and Immich,
+running embedding search across the photo library. Both do real inference on hardware
+in my house instead of someone else's API, which I find more satisfying than it
+probably deserves. I'd also rather my photos and passwords lived on a machine I can
+see. Mostly, though, you don't really understand a system until you've had to restore
+it at an inconvenient hour, and the homelab has given me plenty of those.
 
-## Infrastructure
+Day to day that means Python, Ruby, TypeScript, C#, Go, Scala and a fair bit of C++ and
+Objective-C when something old breaks. Rails and Postgres for most things with a
+database behind them. Docker, GitHub Actions, Jenkins, Terraform and self-hosted
+runners for everything that builds it. Claude Code and MCP for the agent side.
 
-Build systems, CI, self-hosted runner fleets, containers. I like the work where the
-feedback loop is slow and the failure modes are annoying, because that is usually where
-nobody else wants to go.
+There's a longer version of all this, including the homelab, at
+**[tanvir.sh](https://tanvir.sh)**, which answers `curl` too if you'd rather read it in
+a terminal.
 
-I hold the general position that you do not understand a system until you have operated
-one. Reading about backups is not the same as restoring one.
-
-## The homelab
-
-Which is why there is a homelab, and why it has grown well past what it needed to be.
-Everything is reproducible from a git repository. No snowflake containers, no
-configuration that exists only in my head.
-
-| | |
-|---|---|
-| **host** | Unraid, Portainer-managed compose stacks |
-| **ingress** | nginx on an internal domain, cloudflared tunnels for a subset |
-| **scm / ci** | self-hosted GitLab CE |
-| **platform** | Appwrite, self-hosted, multi-container |
-| **vision** | Frigate, continuous detection on the Intel iGPU |
-| **photos** | Immich with a dedicated ML container on pgvector |
-| **also** | Home Assistant · Jellyfin · Nextcloud · Bitwarden · PostgreSQL · Valkey |
-
-The two I enjoy most are Frigate and Immich, because both do real inference on hardware
-I already own rather than on somebody's API. Frigate gets the iGPU passed through for
-decode and detection; doing that on the CPU pins the machine permanently. Immich runs
-embedding search over the photo library, which is the same shape as a production
-retrieval stack at house scale.
-
-Longer write-up: **[tanvir.sh/homelab](https://tanvir.sh/homelab/)**
-
-## What I work with
-
-**agent tooling:** Claude Code · OpenCode · MCP servers · harness design
-
-**languages:** Python · Ruby · TypeScript · C# · Go · Scala · C++ · Objective-C · SQL · Bash
-
-**backend:** Rails · REST · GraphQL · PostgreSQL · MySQL · MongoDB · Redis · RabbitMQ
-
-**platform:** GitHub Actions · Jenkins · Docker · Kubernetes · Terraform · AWS · nginx · Unraid
-
-## Elsewhere
-
-- [tanvir.sh](https://tanvir.sh), which answers `curl` too
-- [linkedin](https://www.linkedin.com/in/tanvir-singh-b21032236/)
-- [singhtanvir032@gmail.com](mailto:singhtanvir032@gmail.com)
+[linkedin](https://www.linkedin.com/in/tanvir-singh-b21032236/) ·
+[singhtanvir032@gmail.com](mailto:singhtanvir032@gmail.com)
