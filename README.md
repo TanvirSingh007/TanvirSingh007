@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a7f37,100:39d353&height=170&section=header&text=Tanvir%20Singh&fontSize=46&fontColor=ffffff&fontAlignY=34&desc=servers%20%C2%B7%20AI%20%C2%B7%20infra&descAlignY=54&descSize=16" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,60:1a7f37,100:39d353&height=170&section=header&text=Tanvir%20Singh&fontSize=46&fontColor=ffffff&fontAlignY=34&desc=code%20%C2%B7%20servers%20%C2%B7%20AI%20%C2%B7%20infra&descAlignY=54&descSize=16" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&pause=1200&color=39D353&center=true&vCenter=true&width=780&lines=%24+ssh+tanvir%40homelab;self-hosting+things+I+could+have+just+paid+for;running+models+on+hardware+I+can+actually+see;if+it+has+a+config+file%2C+I+have+opinions+about+it" alt="typing" />
 
